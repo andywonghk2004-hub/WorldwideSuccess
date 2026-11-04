@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldwide Success Ltd | Corporate Intelligence & Due Diligence Asia</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            950: '#070b14',
+                            900: '#0b1329',
+                            800: '#111e3f',
+                            700: '#1a2b56',
+                            600: '#263d75'
+                        },
+                        gold: {
+                            600: '#b8860b',
+                            500: '#d4af37',
+                            400: '#e6ca65',
+                            300: '#f3e39d'
+                        },
+                        slateDark: '#121824'
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-[#f3e39d,#d4af37,#b8860b];
+            background: linear-gradient(135deg, #f3e39d 0%, #d4af37 50%, #b8860b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #d4af37, #111e3f) 1;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="bg-navy-950 text-slate-200 font-sans antialiased selection:bg-gold-500 selection:text-navy-950">
+
+    <!-- Toast Alert -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-3 bg-navy-800 text-gold-400 px-6 py-4 rounded-xl border border-gold-500/30 shadow-2xl backdrop-blur-md">
+        <i class="fa-solid fa-shield-halved text-xl"></i>
+        <div>
+            <div id="toast-title" class="font-semibold text-sm text-white">Inquiry Received</div>
+            <div id="toast-msg" class="text-xs text-slate-300">Your details have been securely transmitted.</div>
+        </div>
+    </div>
+
+    <!-- Top Confidential Banner -->
+    <div class="bg-navy-900 border-b border-navy-800 text-[11px] py-2 px-4 text-slate-400 tracking-wider uppercase font-mono">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                Confidential Operations | Asia Regional Desk
+            </span>
+            <span class="hidden md:inline-flex items-center gap-4">
+                <span><i class="fa-solid fa-lock text-gold-500 mr-1"></i> Encrypted 256-bit Portal</span>
+                <span><i class="fa-solid fa-globe text-gold-500 mr-1"></i> HK / SG / CN / SEA</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-40 bg-navy-950/90 backdrop-blur-md border-b border-navy-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-gold-400 via-gold-500 to-gold-600 flex items-center justify-center text-navy-950 font-serif font-bold text-xl shadow-lg shadow-gold-500/10 group-hover:scale-105 transition-transform">
+                    W
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-lg sm:text-xl text-white tracking-wider block leading-tight">WORLDWIDE SUCCESS</span>
+                    <span class="text-[10px] font-mono tracking-widest text-gold-400 uppercase block">LIMITED · CORPORATE INTELLIGENCE</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#services" class="hover:text-gold-400 transition-colors">Services</a>
+                <a href="#capabilities" class="hover:text-gold-400 transition-colors">Capabilities</a>
+                <a href="#coverage" class="hover:text-gold-400 transition-colors">Regional Coverage</a>
+                <a href="#calculator" class="hover:text-gold-400 transition-colors">Case Calculator</a>
+                <a href="#contact" class="hover:text-gold-400 transition-colors">Contact Us</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-navy-950 font-semibold px-5 py-2.5 rounded-lg text-sm transition-all shadow-md hover:shadow-gold-500/20">
+                <i class="fa-solid fa-user-shield"></i> Confidential Inquiry
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-24 lg:py-32 bg-grid-pattern overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-navy-950/80 to-navy-950 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-900 border border-gold-500/30 text-gold-400 text-xs font-mono uppercase tracking-widest mb-6">
+                    <i class="fa-solid fa-shield-cat"></i> Premier Asian Corporate Intelligence Firm
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Decisive Intelligence. <br/>
+                    <span class="gold-gradient-text">Uncompromising Due Diligence.</span>
+                </h1>
+                <p class="text-lg text-slate-300 mb-10 leading-relaxed">
+                    Worldwide Success Ltd delivers discreet, high-stakes corporate investigations, Ultimate Beneficial Owner (UBO) unmasking, asset tracing, and legal intelligence across China, Hong Kong, and Greater Asia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-navy-950 font-bold rounded-xl transition-all shadow-xl shadow-gold-500/10 text-center flex items-center justify-center gap-2">
+                        Initiate Confidential Scope <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#services" class="px-8 py-4 bg-navy-900 hover:bg-navy-800 text-slate-200 border border-navy-700 font-semibold rounded-xl transition-all text-center flex items-center justify-center gap-2">
+                        View Practice Areas
+                    </a>
+                </div>
+            </div>
+
+            <!-- Key Metric Cards -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20 pt-10 border-t border-navy-800/80">
+                <div class="bg-navy-900/60 backdrop-blur p-5 rounded-xl border border-navy-800">
+                    <div class="text-2xl font-bold text-gold-400 font-serif">100%</div>
+                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Confidential Guarantee</div>
+                </div>
+                <div class="bg-navy-900/60 backdrop-blur p-5 rounded-xl border border-navy-800">
+                    <div class="text-2xl font-bold text-white font-serif">Greater China</div>
+                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">On-Ground Operatives</div>
+                </div>
+                <div class="bg-navy-900/60 backdrop-blur p-5 rounded-xl border border-navy-800">
+                    <div class="text-2xl font-bold text-gold-400 font-serif">UBO & Asset</div>
+                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Deep Network Mapping</div>
+                </div>
+                <div class="bg-navy-900/60 backdrop-blur p-5 rounded-xl border border-navy-800">
+                    <div class="text-2xl font-bold text-white font-serif">Court-Ready</div>
+                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Documentation Standards</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section id="services" class="py-24 bg-navy-900/40 border-y border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-gold-400 mb-2">Practice Areas</h2>
+                <p class="text-3xl font-bold text-white font-serif">Core Investigative Capabilities</p>
+                <p class="text-slate-400 mt-3 text-sm">Providing international law firms, financial institutions, and global corporations with vetted, actionable intelligence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-navy-900 border border-navy-800 rounded-2xl p-8 hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-800 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Corporate Due Diligence</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive background screening on cross-border target entities, executive management teams, key shareholders, and undisclosed liabilities.</p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-mono">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Reputation & Regulatory Checks</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Sanctions & PEP Screening</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-navy-900 border border-navy-800 rounded-2xl p-8 hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-800 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-sitemap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">UBO & Ownership Mapping</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Unraveling complex offshore structures, nominee arrangements, and shell company layers to identify Ultimate Beneficial Owners (UBO).</p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-mono">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Cross-Jurisdictional Tracing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Nominee Connection Unmasking</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-navy-900 border border-navy-800 rounded-2xl p-8 hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-800 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-vault"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Asset Tracing & Enforcement</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Locating real estate holdings, corporate shares, equity stakes, and hidden commercial assets to support judgment enforcement and arbitrations.</p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-mono">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Post-Judgment Recovery Intelligence</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Corporate Equity Mapping</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-navy-900 border border-navy-800 rounded-2xl p-8 hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-800 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Land Title & Property Searches</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Official land registry verification, property title deeds, encumbrances, and commercial real estate ownership audits across Asian municipalities.</p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-mono">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Official Registry Extracts</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Encumbrance & Mortgage Records</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-navy-900 border border-navy-800 rounded-2xl p-8 hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-800 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Legal & Court Records</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">On-site retrieval of litigation filings, court judgments, bankruptcy proceedings, and regulatory enforcement documents from regional courts.</p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-mono">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Litigation History Retrieval</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Official Document Certification</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-navy-900 border border-navy-800 rounded-2xl p-8 hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-800 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-passport"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Discreet Human Intelligence</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Complementing public registry searches with ethical, confidential primary source inquiries to verify operational footprints.</p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-mono">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Site Visits & Verification</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-500"></i> Industry Source Inquiries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Coverage Section -->
+    <section id="coverage" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5">
+                    <h2 class="text-xs font-mono uppercase tracking-widest text-gold-400 mb-2">Regional Operations Desk</h2>
+                    <h3 class="text-3xl font-bold text-white font-serif mb-6">Deep Roots Across Asia's Key Financial Hubs</h3>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        Navigating Asian corporate registries requires local expertise, language proficiency, and nuanced understanding of regional disclosure thresholds. Worldwide Success Ltd operates seamlessly across key Asian markets.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-navy-900 border border-navy-800">
+                            <i class="fa-solid fa-location-dot text-gold-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Hong Kong & Mainland China</h4>
+                                <p class="text-xs text-slate-400 mt-1">Direct access to AMR registries, HK Companies Registry, litigation databases, and real property searches.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-navy-900 border border-navy-800">
+                            <i class="fa-solid fa-location-dot text-gold-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Singapore & Southeast Asia (ASEAN)</h4>
+                                <p class="text-xs text-slate-400 mt-1">Coverage across ACRA registries, Malaysia, Vietnam, Indonesia, and offshore financial centers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-navy-900 rounded-2xl p-8 border border-navy-800 relative">
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-sm font-semibold text-white">Active Investigation Desks</span>
+                        <span class="text-xs font-mono text-emerald-400 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Systems Online
+                        </span>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                        <div class="p-4 rounded-xl bg-navy-950 border border-navy-800 text-center">
+                            <div class="text-sm font-bold text-white">Hong Kong</div>
+                            <div class="text-[11px] text-gold-400 font-mono mt-1">Primary Operations</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-navy-950 border border-navy-800 text-center">
+                            <div class="text-sm font-bold text-white">Mainland China</div>
+                            <div class="text-[11px] text-slate-400 font-mono mt-1">All Provinces</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-navy-950 border border-navy-800 text-center">
+                            <div class="text-sm font-bold text-white">Singapore</div>
+                            <div class="text-[11px] text-slate-400 font-mono mt-1">ASEAN Regional Hub</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-navy-950 border border-navy-800 text-center">
+                            <div class="text-sm font-bold text-white">British Virgin Is.</div>
+                            <div class="text-[11px] text-slate-400 font-mono mt-1">Offshore Registry</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-navy-950 border border-navy-800 text-center">
+                            <div class="text-sm font-bold text-white">Cayman Islands</div>
+                            <div class="text-[11px] text-slate-400 font-mono mt-1">Offshore Registry</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-navy-950 border border-navy-800 text-center">
+                            <div class="text-sm font-bold text-white">Macau</div>
+                            <div class="text-[11px] text-slate-400 font-mono mt-1">Commercial / Gaming</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Case Calculator / Scope Estimator -->
+    <section id="calculator" class="py-24 bg-navy-900/60 border-y border-navy-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-gold-400 mb-2">Interactive Tool</h2>
+                <h3 class="text-3xl font-bold text-white font-serif">Scope & Turnaround Estimator</h3>
+                <p class="text-slate-400 text-sm mt-2">Estimate turnaround times and parameters for your investigation scope.</p>
+            </div>
+
+            <div class="bg-navy-950 border border-navy-800 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-8">
+                <!-- Step 1: Target Jurisdiction -->
+                <div>
+                    <label class="block text-xs font-mono text-gold-400 uppercase tracking-wider mb-3">1. Select Target Primary Jurisdiction</label>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <button onclick="setJurisdiction('HK', this)" class="juris-btn px-4 py-3 rounded-xl border border-gold-500 bg-gold-500/10 text-white font-medium text-sm transition-all text-center">Hong Kong</button>
+                        <button onclick="setJurisdiction('CN', this)" class="juris-btn px-4 py-3 rounded-xl border border-navy-800 bg-navy-900 text-slate-300 font-medium text-sm transition-all text-center hover:border-navy-700">Mainland China</button>
+                        <button onclick="setJurisdiction('SG', this)" class="juris-btn px-4 py-3 rounded-xl border border-navy-800 bg-navy-900 text-slate-300 font-medium text-sm transition-all text-center hover:border-navy-700">Singapore</button>
+                        <button onclick="setJurisdiction('OFF', this)" class="juris-btn px-4 py-3 rounded-xl border border-navy-800 bg-navy-900 text-slate-300 font-medium text-sm transition-all text-center hover:border-navy-700">BVI / Cayman</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Scope Checklist -->
+                <div>
+                    <label class="block text-xs font-mono text-gold-400 uppercase tracking-wider mb-3">2. Select Required Modules</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl bg-navy-900 border border-navy-800 cursor-pointer hover:border-navy-700">
+                            <input type="checkbox" checked onchange="calculateScope()" class="module-cb w-4 h-4 accent-gold-500 rounded">
+                            <span class="text-sm text-slate-200">UBO & Corporate Structure Search</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl bg-navy-900 border border-navy-800 cursor-pointer hover:border-navy-700">
+                            <input type="checkbox" onchange="calculateScope()" class="module-cb w-4 h-4 accent-gold-500 rounded">
+                            <span class="text-sm text-slate-200">Court Litigation Filings</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl bg-navy-900 border border-navy-800 cursor-pointer hover:border-navy-700">
+                            <input type="checkbox" onchange="calculateScope()" class="module-cb w-4 h-4 accent-gold-500 rounded">
+                            <span class="text-sm text-slate-200">Real Property / Land Title Searches</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl bg-navy-900 border border-navy-800 cursor-pointer hover:border-navy-700">
+                            <input type="checkbox" onchange="calculateScope()" class="module-cb w-4 h-4 accent-gold-500 rounded">
+                            <span class="text-sm text-slate-200">On-Site Discrete Site Visit</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Estimate Output -->
+                <div class="pt-6 border-t border-navy-800 flex flex-col sm:flex-row items-center justify-between gap-4 bg-navy-900/50 p-6 rounded-xl">
+                    <div>
+                        <div class="text-xs text-slate-400 font-mono">Estimated Turnaround Time:</div>
+                        <div id="est-time" class="text-2xl font-bold text-gold-400 font-serif">3 - 5 Business Days</div>
+                    </div>
+                    <button onclick="applyScopeToContact()" class="w-full sm:w-auto px-6 py-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold rounded-xl text-sm transition-all shadow-md">
+                        Transfer to Formal Inquiry <i class="fa-solid fa-arrow-down ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confidential Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Left Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="text-xs font-mono uppercase tracking-widest text-gold-400 mb-2">Confidential Portal</h2>
+                        <h3 class="text-3xl font-bold text-white font-serif">Submit an Inquiry</h3>
+                        <p class="text-slate-300 mt-3 text-sm leading-relaxed">
+                            All communications are encrypted and handled strictly under legal professional privilege protocols.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-5 rounded-xl bg-navy-900 border border-navy-800">
+                            <div class="w-10 h-10 rounded-lg bg-navy-800 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-mono text-slate-400 uppercase">Direct Email Desk</div>
+                                <a href="mailto:andywonghk2004@gmail.com" class="text-white font-medium hover:text-gold-400 transition-colors font-mono text-sm">andywonghk2004@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-5 rounded-xl bg-navy-900 border border-navy-800">
+                            <div class="w-10 h-10 rounded-lg bg-navy-800 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                                <i class="fa-solid fa-building text-gold-400"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-mono text-slate-400 uppercase">Registered Company</div>
+                                <div class="text-white font-medium text-sm">Worldwide Success Ltd</div>
+                                <div class="text-xs text-slate-400">Hong Kong & Regional Asia Operations Desk</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-navy-900/40 border border-navy-800 text-xs text-slate-400 space-y-2">
+                        <div class="flex items-center gap-2 text-gold-400 font-semibold">
+                            <i class="fa-solid fa-user-lock"></i> Strict Non-Disclosure Assured
+                        </div>
+                        <p>We routinely sign Non-Disclosure Agreements (NDAs) prior to case file evaluation.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form id="inquiry-form" onsubmit="handleFormSubmit(event)" class="bg-navy-900 border border-navy-800 rounded-2xl p-8 space-y-6 shadow-2xl">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Law Firm / Institution Name *</label>
+                                <input type="text" required placeholder="e.g. Baker & Associates LLP" class="w-full bg-navy-950 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Official Corporate Email *</label>
+                                <input type="email" required placeholder="partner@firm.com" class="w-full bg-navy-950 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Inquiry Type</label>
+                                <select id="inquiry-type" class="w-full bg-navy-950 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition-colors">
+                                    <option>Corporate Due Diligence / UBO</option>
+                                    <option>Asset Tracing & Recovery Support</option>
+                                    <option>Land Registry & Property Searches</option>
+                                    <option>Litigation & Legal Record Retrieval</option>
+                                    <option>Custom Strategic Intelligence</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Target Jurisdiction</label>
+                                <select id="inquiry-jurisdiction" class="w-full bg-navy-950 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition-colors">
+                                    <option>Hong Kong SAR</option>
+                                    <option>Mainland China</option>
+                                    <option>Singapore / ASEAN</option>
+                                    <option>Offshore (BVI/Cayman)</option>
+                                    <option>Multi-Jurisdiction Asia</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Scope Details & Requirements *</label>
+                            <textarea id="inquiry-scope" required rows="4" placeholder="Please outline target entity names, required searches, or specific intelligence objectives..." class="w-full bg-navy-950 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500 transition-colors"></textarea>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <input type="checkbox" required id="nda-consent" class="w-4 h-4 accent-gold-500 rounded">
+                            <label for="nda-consent" class="text-xs text-slate-400">I confirm this inquiry relates to legitimate corporate intelligence or legal search purposes.</label>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-navy-950 font-bold py-4 rounded-xl transition-all shadow-xl shadow-gold-500/10 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Transmit Confidential Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 border-t border-navy-800 py-12 text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-navy-800/60">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded bg-gold-500 text-navy-950 flex items-center justify-center font-serif font-bold">W</div>
+                    <span class="font-serif font-bold text-white text-base tracking-wider">WORLDWIDE SUCCESS LTD</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-6 font-mono text-slate-400">
+                    <a href="#services" class="hover:text-gold-400">Services</a>
+                    <a href="#coverage" class="hover:text-gold-400">Coverage</a>
+                    <a href="#calculator" class="hover:text-gold-400">Estimator</a>
+                    <a href="mailto:andywonghk2004@gmail.com" class="hover:text-gold-400">Contact</a>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>&copy; 2026 Worldwide Success Ltd. All Rights Reserved. Corporate Intelligence & Due Diligence Asia.</p>
+                <div class="flex items-center gap-2 font-mono text-[11px] text-slate-400">
+                    <i class="fa-solid fa-lock text-gold-500"></i> Secure Communications Desk
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Handlers -->
+    <script>
+        let selectedJurisdiction = 'HK';
+
+        function setJurisdiction(code, btn) {
+            selectedJurisdiction = code;
+            document.querySelectorAll('.juris-btn').forEach(b => {
+                b.className = "juris-btn px-4 py-3 rounded-xl border border-navy-800 bg-navy-900 text-slate-300 font-medium text-sm transition-all text-center hover:border-navy-700";
+            });
+            btn.className = "juris-btn px-4 py-3 rounded-xl border border-gold-500 bg-gold-500/10 text-white font-medium text-sm transition-all text-center";
+            calculateScope();
+        }
+
+        function calculateScope() {
+            const checkboxes = document.querySelectorAll('.module-cb');
+            let checkedCount = 0;
+            checkboxes.forEach(cb => { if(cb.checked) checkedCount++; });
+
+            let days = "2 - 3";
+            if (selectedJurisdiction === 'CN') {
+                days = checkedCount > 2 ? "5 - 7" : "3 - 5";
+            } else if (selectedJurisdiction === 'OFF') {
+                days = checkedCount > 2 ? "4 - 6" : "2 - 4";
+            } else {
+                days = checkedCount > 2 ? "3 - 5" : "2 - 3";
+            }
+
+            document.getElementById('est-time').innerText = `${days} Business Days`;
+        }
+
+        function applyScopeToContact() {
+            const scopeText = `[Scope Estimate Transfer]\nJurisdiction: ${selectedJurisdiction}\nEstimated Business Days: ${document.getElementById('est-time').innerText}\nSpecific entity details: `;
+            document.getElementById('inquiry-scope').value = scopeText;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-20', 'opacity-0');
+
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 4000);
+
+            document.getElementById('inquiry-form').reset();
+        }
+    </script>
+</body>
+</html>
